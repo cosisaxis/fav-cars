@@ -3,10 +3,10 @@ import './Handling.css'
 
 const Handling = () => {
   return (
-    <div className='handling'>
+    <div name='handliing' className='handling'>
         <div className="container">
             <div className="top">
-                {/* <h1>HP</h1> */}
+                <h1>Handling</h1>
             </div>
             <div className='bottom'>
                 <button className='btn btn-dark'>Vroom</button>

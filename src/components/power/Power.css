@@ -1,7 +1,7 @@
 .power{
     width: 100%;
     height: 100vh;
-    background: url('../../assets/felipe-simo-ktltWUbd1lk-unsplash.jpg') no-repeat center center/cover;
+    background: url('../../assets/jakob-rosen-9nN29righco-unsplash.jpg') no-repeat center center/cover;
 
 }
 
@@ -25,4 +25,20 @@
     width: 100%;
     max-width: 600px;
     margin-bottom: 4rem;
-}
+} 
+
+ .power .btn-power{
+    margin: .5rem;
+    padding: .7rem 1.5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    background: rgba(255, 255, 255, .1);
+    width: 90%;
+    color: #f6f6f6;
+    cursor: pointer;
+  }
+  
+  

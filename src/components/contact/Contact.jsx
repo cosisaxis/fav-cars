@@ -6,22 +6,22 @@ const Contact = () => {
         <div name='contact' className='contact'>
             <div className="container">
                 <div className="top">
-                    {/* <h1>Contact</h1> */}
+                    <h1>Contact</h1>
                 </div>
 
                 <form>
                     <div>
                         <label>Name</label>
-                        <input type="text" placeholder='Enter your name' />
+                        <input type="text" placeholder='Enter Name' />
                     </div>
                     <div>
                         <label>Email</label>
                         <input type="email" placeholder='Enter your email' />
                     </div>
-                    <div>
+                    {/* <div>
                         <label>Message</label>
-                        <textarea cols="30" rows="15" placeholder='Enter your message'></textarea>
-                    </div>
+                        <textarea cols="10" rows="10" placeholder='Enter your message'></textarea>
+                    </div> */}
                     <div className="bottom">
                         <button className="btn btn-dark">Submit</button>
                     </div>
