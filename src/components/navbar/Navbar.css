@@ -69,7 +69,7 @@
         margin: .5rem;  
     }
     .navbar-menu li a{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .navbar li:hover{
         border-bottom: 1px solid #aaa;
@@ -102,6 +102,11 @@
     .navbar-menu .icon {
         color: #f8f8f8cc;
         font-size: 1.4rem;
+    }
+    .navbar .slide-right{
+        margin-left: 45%;
+        transition: .8s ease-in-out;
+
     }
 
 }

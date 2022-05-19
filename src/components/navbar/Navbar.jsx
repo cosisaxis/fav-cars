@@ -5,7 +5,13 @@ import './Navbar.css'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const navbarHandler = () => setNav(!nav)
+  const[slide, setSlide] = useState(false);
+
+  const navbarHandler = () => {
+      setNav(!nav)
+      setSlide(!slide)
+    } 
+ 
   
 
 
@@ -16,11 +22,11 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="container">
-            <div className="logo">
+            <div className={slide? 'logo slide-right': 'logo'}>
                 <h3>Speeder</h3>
             </div>
             <ul className={nav? 'navbar-menu active' : 'navbar-menu'}>
-                <li><a href="/">Power</a></li>
+                {/* <li><a href="/">Power</a></li> */}
                 <li><a href="/">Power</a></li>
                 <li><a href="/">Power</a></li>
                 <li><a href="/">Power</a></li>
