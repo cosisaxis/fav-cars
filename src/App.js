@@ -4,6 +4,8 @@ import Navbar from "./components/navbar/Navbar";
 import Power from "./components/power/Power";
 import Speed from "./components/speed/Speed";
 import Options from "./components/options/Options";
+import Contact from "./components/contact/Contact";
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
     <Speed />
     <Handling />
     <Options />
+    <Contact />
+    
       
     </>
   );
