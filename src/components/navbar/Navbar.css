@@ -1,0 +1,114 @@
+.navbar{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    color: #f6f6f6;
+    z-index: 5;
+}
+
+.hamburg{
+    display: none;
+    padding: 1rem;
+}
+
+.mobile-menu{
+    display: none;
+}
+.navbar-menu{
+    display: flex;
+}
+
+.navbar-menu li{
+    padding: 1rem;
+}
+
+.navbar-menu li a {
+    color: #f6f6f6;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 940px){
+    .hamburg{
+        display: block;
+        z-index: 5;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-menu{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        background-color: var(--main-color);
+        top: 0;
+        right: -100%;
+        transition: 0.9s ease-in-out;
+    }
+    .active{
+        right: 0;
+    }
+    .navbar-menu li{
+        margin: .5rem;  
+    }
+    .navbar-menu li a{
+        font-size: 1.2rem;
+    }
+    .navbar li:hover{
+        border-bottom: 1px solid #aaa;
+        width: 175px;
+    }
+    .disappear{
+        display: none;
+    }
+    .navbar-menu button {
+        margin: 1rem auto;
+        padding: .7rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        border: none;
+        background: rgba(255, 255, 255, .3);
+        width: 100%;
+        color: #f6f6f6;
+    }
+
+    .navbar-menu button:hover {
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .navbar-menu .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    .navbar-menu .icon {
+        color: #f8f8f8cc;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    .navbar-menu{
+        width: 75%;
+    }
+
+}
