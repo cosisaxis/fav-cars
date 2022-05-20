@@ -3,6 +3,7 @@ import {FaBars, FaTimes, FaFacebook, FaInstagram} from 'react-icons/fa'
 import {GiCarWheel} from 'react-icons/gi'
 import './Navbar.css'
 import { Link } from 'react-scroll'
+import logo1 from '../../assets/ferrari-2-logo-svgrepo-com.svg'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   const navbarHandler = () => {
       setNav(!nav)
-      setSlide(!slide)
+    //   setSlide(!slide)
     } 
 
    const closeNavbar = () =>{
@@ -30,7 +31,7 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="container">
             <div className={slide? 'logo slide-right': 'logo'}>
-                <h3>Speeder</h3>
+                <h3>Ferrari</h3>
             </div>
             <ul className={nav? 'navbar-menu active' : 'navbar-menu'}>
             <li><a href="/"><Link onClick={closeNavbar} activeClass="active" to="speed" spy={true} smooth={true} duration={500}>Speed</Link></a></li>

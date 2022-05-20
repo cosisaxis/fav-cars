@@ -1,7 +1,7 @@
 .power{
     width: 100%;
     height: 100vh;
-    background: url('../../assets/jakob-rosen-9nN29righco-unsplash.jpg') no-repeat center center/cover;
+    background: url('../../assets/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg') no-repeat center center/cover;
 
 }
 
@@ -41,4 +41,10 @@
     cursor: pointer;
   }
   
+  @media screen and (max-width:540px) {
+    .power .container .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
   
