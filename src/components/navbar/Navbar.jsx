@@ -34,8 +34,8 @@ const Navbar = () => {
                 <h3>Ferrari</h3>
             </div>
             <ul className={nav? 'navbar-menu active' : 'navbar-menu'}>
+            <li><a href="/"><Link onClick={closeNavbar} activeClass="active" to="power" spy={true} smooth={true} duration={500}>Power</Link></a></li>  
             <li><a href="/"><Link onClick={closeNavbar} activeClass="active" to="speed" spy={true} smooth={true} duration={500}>Speed</Link></a></li>
-            <li><a href="/"><Link onClick={closeNavbar} activeClass="active" to="power" spy={true} smooth={true} duration={500}>Power</Link></a></li>
             <li><a href="/"><Link onClick={closeNavbar}  activeClass="active" to="handling" spy={true} smooth={true} duration={500}>Handling</Link></a></li>
             <li><a href="/"><Link onClick={closeNavbar}  activeClass="active" to="options" spy={true} smooth={true} duration={500}>Options</Link></a></li>
             <li><a href="/"><Link onClick={closeNavbar}  activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Contact</Link></a></li>
